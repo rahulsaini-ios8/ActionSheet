@@ -8,8 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <UIActionSheetDelegate>
 
+
+@property (nonatomic, weak) IBOutlet UILabel *rateLabel;
+
+- (IBAction)displayActionSheet:(id)sender;
 
 @end
 
